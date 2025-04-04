@@ -10,15 +10,46 @@
         font-weight: bold;
     }
 
+
     .cartao{
-        color: #ff00a6;
-        border: 1px solid #ff00a6;
-        width: 12rem;
-        height: 14rem;
+        color: #0029bd;
+        border: 1px solid #0029bd;
+        width: 17rem;
+        height: 25rem;
         border-radius: 0.5rem;
         padding: 1rem;
         margin: 2rem auto;
-        box-shadow: 0.5rem 0.5rem 0.3rem 0.01rem #ff00a6}
+        box-shadow: 0.5rem 0.5rem 0.3rem 0.01rem #0029bd}
+
+    img{
+        width: 15rem;
+        height: 13rem;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        
+    }
+        
+
+    .titulo{
+            font-size: 1.5rem;
+            font-weight: bold;
+
+        }
+        
+    .descricao{
+        font-size: 0.5rem;
+        text-align: center;
+
+    }
+    .preco{ 
+        font-size: 1.5rem;
+        font-weight: bolder;
+        text-align: right;
+        border: 1px solid blue;
+    }
+
+
 
 
         
@@ -34,8 +65,14 @@
             * 
             */
 
-        var produto = prompt("informe o nome do produto");
-        document.write('Produto: ${produto}');
+            var produto = prompt("informe o nome do produto");
+            var descricao = prompt("informe a descrição do produto");
+            var preco = prompt("informe o preço do produto");
+
+            document.write(`<img src="bh.png" alt='logo de supermercado'>`);
+            document.write(`<h1 class="titulo"> ${produto} </h1>`);
+            document.write(`<article class="descricao"> ${descricao} </article>`);
+            document.write(`<aside class="preco"> R$${preco} </aside>`);
 
         
         </script>
